@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    height: 100vh;
+    background:linear-gradient(
+        135deg,
+        #0f6ebb,
+        #e62121
+    )
+    /* background-image:url(/411.jpg) ; */
+}
+
+.container{
+
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 45%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+
+
+
+}
+/* #newtask{
+    background-color:#6263D5;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow:0 15px 20px rgba(0, 0, 0, 0.4);
+} */
+
+
+#newtask {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#47297B;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow:0 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+#newtask input{
+    width: 70%;
+    font-size: 20px;
+    border: 2px solid #47297B;
+    padding: 12px;
+    color: #47297B;
+    font-weight: 500;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #F5BD1F;
+}
+#newtask button{
+    
+   
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 500;
+    background-color: #e6eaff;
+    border: none;
+    color: #47297B;
+    font-size: 20px;
+    
+}
+#push{
+
+    position: absolute;
+    transition: ease;
+    cursor: pointer;
+}
+ 
+#push:active {
+    transform: scale(0.95);
+}
+#push2{
+
+    position: absolute;
+    transition: ease;
+    display: none;
+    cursor: pointer;
+
+}
+ 
+#push2:active {
+    transform: scale(0.95);
+}
+
+/* li{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 0;
+    background-color: white;
+    color: #6263D5;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0;
+} */
+
+li {
+    list-style: none;
+}
+
+/* ul {
+    padding: 10px 30px;
+} */
+
+.mymainLi {
+    border: 10px solid #6a4e9b;
+    /* border-bottom: 10px solid #4a4b9b; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color:#6a4e9b;
+    padding: 10px;
+
+    /* margin: 15px 0; */
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+
+}
+
+
+#list{
+
+    background-color: #6a4e9b;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+    box-shadow:0 10px 20px rgba(0, 0, 0, 0.4);
+}
+    
+#heading{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-weight: 800; */
+    font-size: 40px;
+    color:#030103 ;
+    
+
+
+}
+
+.liBtn{
+    padding: 10px 10px;
+    background-color:#52307C;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    margin: 0px 10px;
+    
+    
+}
+
+.liBtn:active{
+    transform: scale(0.95);
+}
+
+.fa {
+    font-size: 20px;
+}
+
+.editBtn{
+    padding: 10px 10px;
+    background-color:#52307C;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+.editBtn:active{
+    transform:scale(0.95);
+}
+
+.delAll{
+
+    padding: 10px 10px;
+    background-color:#52307C;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 10px;
+
+    
+}
+
+.delAll:active{
+    transform: scale(0.95);
+}
+.far{
+    font-size: 100%;
+}
+
+@media only screen and (max-width: 360px) {
+    .container {
+        min-width: 90%;
+        padding: 30px 10px;
+    }
+
+    #heading {
+        font-size: 30px;
+        text-align: center;
+    }
+    #newtask{
+
+        
+        width: 100%;
+        
+    }
+    #newtask button{
+
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+
+    }
+    #newtask input{
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .mymainLi{
+        width: 100%;
+        font-size: 18px;
+        
+    }
+
+ 
+    .fa {
+        font-size: 100%;
+    }
+    .mymainLi button {
+        padding: 5px;
+        margin: 0 2px;
+
+    }
+
+}
+@media only screen and (max-width: 375px) {
+    .container {
+        min-width: 90%;
+        padding: 30px 10px;
+    }
+
+    #heading {
+        font-size: 30px;
+        text-align: center;
+    }
+    #newtask{
+
+        
+        width: 100%;
+        
+    }
+    #newtask button{
+
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+
+    }
+    #newtask input{
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .mymainLi{
+        width: 100%;
+        font-size: 18px;
+        
+    }
+
+
+    .fa {
+        font-size: 100%;
+    }
+    .mymainLi button {
+        padding: 5px;
+        margin: 0 2px;
+
+    }
+
+}
+@media only screen and (max-width: 414px) {
+    .container {
+        min-width: 90%;
+        padding: 30px 10px;
+    }
+
+    #heading {
+        font-size: 30px;
+        text-align: center;
+    }
+    #newtask{
+
+        
+        width: 100%;
+        
+    }
+    #newtask button{
+
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+
+    }
+    #newtask input{
+        width: 60%;
+        font-size: 15px;
+    }
+
+    .mymainLi{
+        width: 100%;
+        font-size: 18px;
+        
+    }
+
+
+    .fa {
+        font-size: 100%;
+    }
+    .mymainLi button {
+        padding: 5px;
+        margin: 0 2px;
+
+    }
+
+}
+
